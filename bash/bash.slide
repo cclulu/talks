@@ -7,18 +7,44 @@ Software Developer, Allstate
 cclulu11@gmail.com
 @CCxLulu
 
-* sh
+* What is it?
 
+command line interpreter to interact with the operating system
+
+* sh
 Bourne shell
 
-* bash
+- basic shell that we tend to use
+- commanly seen when used in writing scripts
+  #!/bin/sh
 
+* bash
 Bourne again shell
 
-* zsh
+- based of *sh* with some addition features
+- also commanly seen when used in writing scripts
+  #!/bin/bash
 
-zshell
+* others
+C shell - *csh*
 
-* fish
+- is based of *sh* but is give a C like syntax
 
- Friendly interactive shell
+korn shell - *ksh*
+
+- based of *csh* and *sh* with some addition features
+- does require a license so not as used
+
+Z shell - *zsh* 
+
+- more powerfull than bash, but not as portable
+
+Friendly interactive shell - *fish*
+
+- similar to zsh but everything is already customized for you
+
+* shebang
+
+why use it?
+
+- tell UNIX/Linux which interpreter to use
