@@ -43,8 +43,27 @@ Friendly interactive shell - *fish*
 
 - similar to zsh but everything is already customized for you
 
+.image ../images/Fish_shell_logo_ascii.png
+
+* what should I use?
+
+.image ../images/jackieconfused.jpg
+
+* what I like to use
+
+.image ../images/bashvszsh.jpg
+
 * shebang
 
 why use it?
 
+  #!/bin/bash
+  #!/bin/sh
+  #!/bin/csh
+  #!/usr/bin/perl
+  #!/usr/bin/env python
+
 - tell UNIX/Linux which interpreter to use
+- most interpreters live in the bin folder so /bin/<intrepreter> is the absolute path to it
+
+* THE PATH
