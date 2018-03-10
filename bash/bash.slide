@@ -8,7 +8,6 @@ cclulu11@gmail.com
 @CCxLulu
 
 * What is it?
-
 command line interpreter to interact with the operating system
 
 * sh
@@ -66,4 +65,36 @@ why use it?
 - tell UNIX/Linux which interpreter to use
 - most interpreters live in the bin folder so /bin/<intrepreter> is the absolute path to it
 
+* Permission
+
+ r w x
+ 1 1 1 = 7
+ 1 1 0 = 6
+ 1 0 1 = 5
+ 1 0 0 = 4
+ 0 1 1 = 3
+ 0 1 0 = 2
+ 0 0 1 = 1
+ 0 0 0 = 0
+
+* Permission
+
+User Group World
+rwx  rwx   rwx
+
+pop quiz what does 755 mean?
+
+* Notable ones
+
+r w x | r w x |  r w x
+1 1 1 | 1 1 1 |  1 1 1 = 777
+1 1 1 | 1 0 1 |  1 0 1 = 755
+1 1 1 | 1 0 0 |  1 0 0 = 744
+
+* why do I care
+
+*chmod*
+
 * THE PATH
+
+what is _THE_ _PATH_?
