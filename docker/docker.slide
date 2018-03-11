@@ -8,4 +8,23 @@ cclulu11@gmail.com
 @CCxLulu
 
 * Terminology
+images - blue prints
+containers - the instance of an image
 
+* Building an image
+
+    FROM ubuntu
+    RUN <bash commands>
+
+    docker build -t <name of image>
+
+
+* Creating a container
+    docker run --name <name of container> -t <name of image>
+
+Thats it
+
+* Done
+
+* Not really
+where do I go from here?
