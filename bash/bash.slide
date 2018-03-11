@@ -1,5 +1,5 @@
 Shells
-Did you know?
+back to basics
 23 Mar 2018
 
 Cuahuctemoc Osorio
@@ -13,13 +13,13 @@ command line interpreter to interact with the operating system
 * sh
 Bourne shell
 
-- basic shell that we tend to use
 - commanly seen when used in writing scripts
   #!/bin/sh
 
 * bash
 Bourne again shell
 
+- basic shell that we tend to use
 - based of *sh* with some addition features
 - also commanly seen when used in writing scripts
   #!/bin/bash
@@ -27,20 +27,26 @@ Bourne again shell
 * others
 C shell - *csh*
 
-- is based of *sh* but is give a C like syntax
+- is based of *sh* but is given a C like syntax
 
 korn shell - *ksh*
 
 - based of *csh* and *sh* with some addition features
 - does require a license so not as used
 
+* others again
 Z shell - *zsh* 
 
 - more powerfull than bash, but not as portable
+- frameworks to add plugins easier
+  - oh-my-zsh
+  - prezto
 
 Friendly interactive shell - *fish*
 
 - similar to zsh but everything is already customized for you
+- frameworks to add plugins easier
+  - oh-my-fish
 
 .image ../images/Fish_shell_logo_ascii.png
 
@@ -66,39 +72,46 @@ why use it?
 - most interpreters live in the bin folder so /bin/<intrepreter> is the absolute path to it
 
 * Permission
-
- r w x
- 1 1 1 = 7
- 1 1 0 = 6
- 1 0 1 = 5
- 1 0 0 = 4
- 0 1 1 = 3
- 0 1 0 = 2
- 0 0 1 = 1
- 0 0 0 = 0
+   r w x
+   1 1 1 = 7
+   1 1 0 = 6
+   1 0 1 = 5
+   1 0 0 = 4
+   0 1 1 = 3
+   0 1 0 = 2
+   0 0 1 = 1
+   0 0 0 = 0
 
 * Permission
-
 User Group World
 rwx  rwx   rwx
 
-pop quiz what does 755 mean?
-
 * Notable ones
-
 r w x | r w x |  r w x
 1 1 1 | 1 1 1 |  1 1 1 = 777
 1 1 1 | 1 0 1 |  1 0 1 = 755
 1 1 1 | 1 0 0 |  1 0 0 = 744
 
-* why do I care
+* Now what?
+changing permissions
+-rwxr-x-r-x  
 
-*chmod*
+you can see what you can or can not access or modify
 
-* THE PATH
+* PATH
+what is it?
 
-what is _THE_ _PATH_?
+* PATH
+lets you run command without specifying its location
+some defaults
+
+    /usr/local/bin:/usr/bin:/bin/:sbin/
+
+examples: `present` or `git` 
+
 
 * useful links
 
-.link  http://mason.gmu.edu/~montecin/UNIXpermiss.htm Permision table
+.link http://mason.gmu.edu/~montecin/UNIXpermiss.htm Permision table
+.link http://www.faqs.org/faqs/unix-faq/shell/shell-differences/ difference in shells
+.link http://hyperpolyglot.org/unix-shells Grammer differences
