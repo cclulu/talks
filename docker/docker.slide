@@ -28,3 +28,7 @@ Thats it
 
 * Not really
 where do I go from here?
+
+* Quick checks
+
+docker run --rm -it  <image-name>:<version> /bin/bash
