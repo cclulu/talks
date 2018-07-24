@@ -32,3 +32,16 @@ where do I go from here?
 * Quick checks
 
 docker run --rm -it  <image-name>:<version> /bin/bash
+
+docker run --rm -it -v $(pwd):/go/src/webserver -w /go/src/webserver golang:1.8.3 /bin/bash
+
+ -v mount volume 
+   basicly mount a directory into your docker images
+   
+ -w working directory
+   where you will be when you run the image
+   
+ golang:1.8.3 -  what docker images to run on
+ 
+ /bin/bash - how you will start when you run the images (entry point)
+   
