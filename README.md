@@ -1,7 +1,7 @@
 # Talks
 
-## prerequisites
-  - you need to have go installed
+## Prerequisites
+  - You need to have Golang installed.
 
 ```bash
 go install golang.org/x/tools/cmd/present
